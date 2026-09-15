@@ -46,13 +46,21 @@ No programa, verificamos os seguintes dados:
 ## Limites usados no projeto
 
 Temperatura interna - Entre 15 °C e 26,5 °C
+
 Temperatura externa - Entre 15 °C e 25 °C
+
 Integridade estrutural - Deve ser igual a 1
+
 Carga da bateria - Entre 80% e 100%
+
 Energia restante - Deve ser maior ou igual a 50 kWh
+
 Pressão do hélio - Entre 280 e 320 bar
+
 Pressão do combustível - Entre 24 e 26 bar
+
 Pressão do comburente - Entre 24 e 26 bar
+
 Módulos críticos - Todos devem estar como ok
 
 ## Cálculo da energia
@@ -71,9 +79,12 @@ Para calcular a energia da nave, usamos quatro etapas:
 As fórmulas usadas foram:
 
 energia_inicial = capacidade_total * (carga_atual / 100) 
+
 energia_apos_consumo = energia_inicial - consumo_decolagem 
+
 perda = energia_apos_consumo * (perda_energetica / 100) 
-energia_restante = energia_apos_consumo - perda`
+
+energia_restante = energia_apos_consumo - perda
 
 ## Exemplo de cálculo
 
