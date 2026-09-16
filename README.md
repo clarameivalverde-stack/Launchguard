@@ -125,18 +125,19 @@ energia_restante = energia_apos_consumo - perda
 
 # Evidências da execução
 
-# Simulação normal
+## Exemplo 1: nave pronta para decolar
 
-Com os parâmetros dentro dos limites definidos, o sistema apresentou:
+Neste teste, informamos valores dentro dos limites de segurança. Todos os módulos estavam funcionando normalmente.
 
-**PRONTO PARA DECOLAR**
+<img width="1853" height="808" alt="Captura de tela 2026-09-15 090326" src="https://github.com/user-attachments/assets/97e55325-bf32-497b-a7f0-179fc3bef845" />
 
-[imagem da execução]
+Nesse caso, o programa mostrou que a nave está pronta para decolar, porque todos os dados estavam corretos.
 
-### Simulação com anomalia
+## Exemplo 2: decolagem abortada
 
-Foi realizada uma segunda simulação com a temperatura externa em 30 °C, acima do limite operacional definido. O sistema identificou a condição e apresentou:
+Neste teste, eu coloquei uma temperatura externa acima do limite, uma carga de bateria abaixo do mínimo e uma falha no módulo de navegação.
 
-**DECOLAGEM ABORTADA**
+<img width="1853" height="812" alt="Captura de tela 2026-09-15 090449" src="https://github.com/user-attachments/assets/73a905c7-a6eb-41ed-b843-218ce9e6e065" />
 
-[imagem da execução]
+Nesse caso, o programa abortou a decolagem porque encontrou condições que não estavam seguras.
+
