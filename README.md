@@ -1,7 +1,8 @@
 # LaunchGuard
-Projeto em Python que analisa dados de telemetria e verifica se uma nave está segura para decolar.
 
-# Sistema de Telemetria da Nave Espacial
+### Sistema de Telemetria da Nave Espacial
+
+Projeto em Python que analisa dados de telemetria e verifica se uma nave está segura para decolar.
 
 # Explicação do Projeto
 
@@ -71,57 +72,14 @@ Os valores utilizados no projeto são de uma simulação acadêmica e não repre
 
 A Inteligência Artificial foi utilizada como ferramenta de apoio à análise dos dados de telemetria da nave. Os parâmetros são classificados de acordo com as condições definidas no projeto, permitindo identificar possíveis anomalias e riscos operacionais.
 
-Na simulação analisada, os dados de temperatura, integração estrutural, pressões dos tanques, energia e módulos críticos foram verificados. A análise também considerou a energia restante de 63 kWh após o consumo estimado e as perdas energéticas. 
+Na simulação analisada, os dados de temperatura, integridade estrutural, pressões dos tanques, energia e módulos críticos foram verificados. A análise também considerou a energia restante de 63 kWh após o consumo estimado e as perdas energéticas. 
 
 Possíveis anomalias incluem temperaturas ou pressões fora das faixas estabelecidas, falha estrutural, nível de energia inadequado ou falha em algum dos módulos críticos.
 
 A IA atua como ferramenta de apoio à identificação de padrões e possíveis anomalias. A decisão operacional permanece baseada nos critérios de segurança definidos pelo sistema e na supervisão humana.
 
-# Limites de segurança utilizados
 
-- Temperatura interna: 15 °C a 26,5 °C
-- Temperatura externa: 15 °C a 25 °C
-- Integridade estrutural: igual a 1
-- Carga da bateria: 80% a 100%
-- Energia restante: mínimo de 50 kWh
-- Pressão do hélio: 280 a 320 bar
-- Pressão do combustível: 24 a 26 bar
-- Pressão do comburente: 24 a 26 bar
-- Módulos críticos: todos devem estar em "ok"
-
-# Análise energética
-
-Para a simulação, foi considerada uma capacidade total de 100 kWh e uma carga inicial de 90%.
-
-Energia inicial:
-
-100 x 90 / 100 = 90 kWh
-
-Após o consumo estimado de 20 kWh:
-
-90 - 20 = 70 kWh
-
-Considerando uma perda energética de 10%:
-
-70 x 10 / 100 = 7 kWh
-
-Energia restante:
-
-70 - 7 = 63 kWh
-
-Portanto, na simulação realizada, a nave termina a etapa de decolagem com 63 kWh de energia restante.
-
-# Como executar
-
-1. Abra o arquivo `Projeto Launchguard.ipynb`.
-2. Execute as células do notebook.
-3. Informe os valores solicitados pelo programa.
-4. O sistema realizará os cálculos de energia e verificará os parâmetros de segurança.
-5. Ao final, será exibido `PRONTO PARA DECOLAR` ou `DECOLAGEM ABORTADA`.
-
-Os valores utilizados no projeto são de uma simulação acadêmica e não representam parâmetros reais de uma nave espacial.
-
-## O que o programa verifica
+# O que o programa verifica
 
 No programa, verificamos os seguintes dados:
 
@@ -141,27 +99,8 @@ No programa, verificamos os seguintes dados:
 - Status do módulo de energia
 - Status do módulo de separação
     
-## Limites usados no projeto
 
-Temperatura interna - Entre 15 °C e 26,5 °C
-
-Temperatura externa - Entre 15 °C e 25 °C
-
-Integridade estrutural - Deve ser igual a 1
-
-Carga da bateria - Entre 80% e 100%
-
-Energia restante - Deve ser maior ou igual a 50 kWh
-
-Pressão do hélio - Entre 280 e 320 bar
-
-Pressão do combustível - Entre 24 e 26 bar
-
-Pressão do comburente - Entre 24 e 26 bar
-
-Módulos críticos - Todos devem estar como ok
-
-## Cálculo da energia
+# Cálculo da energia
 
 Para calcular a energia da nave, usamos quatro etapas:
 
@@ -184,22 +123,20 @@ perda = energia_apos_consumo * (perda_energetica / 100)
 
 energia_restante = energia_apos_consumo - perda
 
-## Exemplo de cálculo
+# Evidências da execução
 
-Consideramos uma bateria com capacidade total de 100 kWh e carga atual de 90%.
+# Simulação normal
 
-Capacidade total: 100 kWh 
-Carga atual: 90% 
-Energia inicial: 90 kWh 
+Com os parâmetros dentro dos limites definidos, o sistema apresentou:
 
-Consumo na decolagem: 20 kWh 
+**PRONTO PARA DECOLAR**
 
-Energia após o consumo: 70 kWh 
+[imagem da execução]
 
-Perda energética: 10% 
+### Simulação com anomalia
 
-Perda: 7 kWh 
+Foi realizada uma segunda simulação com a temperatura externa em 30 °C, acima do limite operacional definido. O sistema identificou a condição e apresentou:
 
-Energia restante: 63 kWh`
+**DECOLAGEM ABORTADA**
 
-Nesse exemplo, a nave termina com 63 kWh de energia. Como esse valor é maior que 50 kWh, a energia está dentro do limite definido no projeto.
+[imagem da execução]
