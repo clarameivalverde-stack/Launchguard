@@ -23,16 +23,6 @@ A proposta deste projeto é aplicar conceitos de programação em Python em um c
 
 Este é um projeto de estudo. Os valores de temperatura, pressão e energia foram definidos exclusivamente para a simulação e não representam dados reais, limites operacionais ou especificações técnicas de uma nave espacial.
 
-# Análise Assistida por Inteligência Artificial
-
-A Inteligência Artificial foi utilizada como ferramenta de apoio à análise dos dados de telemetria da nave. Os parâmetros são classificados de acordo com as condições definidas no projeto, permitindo identificar possíveis anomalias e riscos operacionais.
-
-Na simulação analisada, os dados de temperatura, integração estrutural, pressões dos tanques, energia e módulos críticos foram verificados. A análise também considerou a energia restante de 63 kWh após o consumo estimado e as perdas energéticas. 
-
-Possíveis anomalias incluem temperaturas ou pressões fora das faixas estabelecidas, falha estrutural, nível de energia inadequado ou falha em algum dos módulos críticos.
-
-A IA atua como ferramenta de apoio à identificação de padrões e possíveis anomalias. A decisão operacional permanece baseada nos critérios de segurança definidos pelo sistema e na supervisão humana.
-
 # Limites de segurança utilizados
 
 - Temperatura interna: 15 °C a 26,5 °C
