@@ -141,18 +141,3 @@ Neste teste, eu coloquei uma temperatura externa acima do limite, uma carga de b
 
 Nesse caso, o programa abortou a decolagem porque encontrou condições que não estavam seguras.
 
-# Simulação normal
-
-Com os parâmetros dentro dos limites definidos, o sistema apresentou:
-
-**PRONTO PARA DECOLAR**
-
-[imagem da execução]
-
-### Simulação com anomalia
-
-Foi realizada uma segunda simulação com a temperatura externa em 30 °C, acima do limite operacional definido. O sistema identificou a condição e apresentou:
-
-**DECOLAGEM ABORTADA**
-
-[imagem da execução]
