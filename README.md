@@ -125,6 +125,22 @@ energia_restante = energia_apos_consumo - perda
 
 # Evidências da execução
 
+## Exemplo 1: nave pronta para decolar
+
+Neste teste, informamos valores dentro dos limites de segurança. Todos os módulos estavam funcionando normalmente.
+
+<img width="1853" height="808" alt="Captura de tela 2026-09-15 090326" src="https://github.com/user-attachments/assets/97e55325-bf32-497b-a7f0-179fc3bef845" />
+
+Nesse caso, o programa mostrou que a nave está pronta para decolar, porque todos os dados estavam corretos.
+
+## Exemplo 2: decolagem abortada
+
+Neste teste, eu coloquei uma temperatura externa acima do limite, uma carga de bateria abaixo do mínimo e uma falha no módulo de navegação.
+
+<img width="1853" height="812" alt="Captura de tela 2026-09-15 090449" src="https://github.com/user-attachments/assets/73a905c7-a6eb-41ed-b843-218ce9e6e065" />
+
+Nesse caso, o programa abortou a decolagem porque encontrou condições que não estavam seguras.
+
 # Simulação normal
 
 Com os parâmetros dentro dos limites definidos, o sistema apresentou:
